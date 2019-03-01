@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <script src="./js/bootstrap.min.js" charset="utf-8"></script>
+  <style>
+  html {
+    font-size: 14px;
+  }
+  @media (min-width: 768px) {
+    html {
+      font-size: 16px;
+    }
+
+    #widget {
+      max-width: 380px;
+    }
+  }
+
+  @media (max-width: 767px){
+    #widget {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 940px) {
+    .post-image-holder {
+      display: none;
+    }
+
+    .post-image {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  @media (min-width: 941px){
+    .post-image {
+      width: 200px;
+      height: 100%;
+    }
+    .post-image-holder {
+      overflow: hidden;
+    }
+    .post-image-mobile {
+      display: none;
+    }
+  }
+
+  @media (max-width: 720px){
+    .post-image-mobile-holder {
+      display: block;
+    }
+  }
+
+  @media (min-width: 721px){
+    .post-image-mobile-holder {
+      display: none;
+    }
+  }
+
+  @media (min-width: 786px) {
+    .jumbotron .container {
+      background-size: 600px;
+    }
+    .jumbo-block {
+      max-width: 50%;
+    }
+  }
+
+  @media (max-width: 785px) {
+    .jumbotron .container {
+      background-size: 300px !important;
+    }
+    .jumbo-block {
+      max-width: 70%;
+    }
+  }
+
+  @media (max-width: 1199px){
+    #col-post {
+      max-width: 640px;
+    }
+  }
+
+  @media (max-width: 991px){
+    #col-post {
+      max-width: 480px;
+    }
+    #widget {
+      max-width: 480px;
+    }
+  }
+
+  .pricing-header {
+    max-width: 700px;
+  }
+
+  .card-deck .card {
+    min-width: 220px;
+  }
+  .jumbotron {
+    background-color: inherit;
+  }
+  .jumbotron .container {
+    background-image: url('./assets/untitled_artwork_2x.png');
+    background-size: 600px;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-left: 4rem;
+  }
+
+  .container .card {
+    margin-bottom: 1rem;
+  }
+
+  .footer {
+    background-color: #DFE6E9;
+  }
+
+  .footer .container {
+    width: auto;
+    max-width: 680px;
+    padding: 0 15px;
+  }
+  .main-body{
+    margin-bottom: 3rem;
+  }
+  </style>
+  <title>Unit Aktivitas Panahan | Universitas Brawijaya</title>
+</head>
+<body>
+  <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 bg-white border-bottom shadow-sm">
+    <h5 class="my-0 mr-md-auto font-weight-normal">Unit Aktivitas Panahan</h5>
+    <nav class="my-2 my-md-0 mr-md-3">
+      <a class="p-2 text-dark" href="#">Tentang Kami</a>
+      <a class="p-2 text-dark" href="#">Brawijaya Archery Championship</a>
+      <a class="p-2 text-dark" href="#">Dokumentasi</a>
+      <a class="p-2 text-dark" href="#">Kontak</a>
+    </nav>
+  </div>
+  <div class="jumbotron" style="margin-bottom: 1rem; padding-bottom:1rem; overflow:hidden;">
+    <div class="container">
+      <div class="row">
+        <div class="col jumbo-block">
+          <h1 class="display-4">Unit Aktivitas Panahan<br>Universitas Brawijaya</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lacinia sodales risus, sit amet gravida libero fermentum eget. Aenean lacinia malesuada varius. Pellentesque habitant morbi tristique senectus et netus. senectus et netus et malesuada fames ac turpis egestas. senectus et netus et malesuada fames ac turpis egestas.</p>
+          <!-- <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p> -->
+          <p><a class="btn btn-outline-primary btn-lg" href="#" role="button">Learn more »</a></p>
+          <p><a href="https://dribbble.com/shots/6012612-Archer-Revisited?utm_source=Clipboard_Shot&utm_campaign=nickbrito&utm_content=Archer%20Revisited&utm_medium=Social_Share" class="text-danger">
+            Copyrighted image!</a>
+          </p>
+        </div>
+        <!--
+        <div class="col">
+        <img style="width: 100%" src="./assets/untitled_artwork_2x.png" alt="Bg">
+      </div>
+    -->
+  </div>
+</div>
+</div>
+<hr>
+<div class="container main-body">
+  <div class="row">
+    <div class="col-xl" id="col-post">
+      <div class="card post-card" style="width: 100%;">
+        <div class="row">
+          <div class="col-3 post-image-holder">
+            <img src="./assets/placeholder.png" class="post-image" width="200px" height="200px" alt="Gambar" />
+          </div>
+          <div class="col">
+            <div class="card-body">
+              <div class="post-image-mobile-holder" style="max-height: 150px; overflow: hidden; margin-bottom:1rem;">
+                <img src="./assets/placeholder.png" class="post-image-mobile" width="500px" height="500px" alt="Gambar" />
+              </div>
+              <h6 class="card-subtitle mb-2 text-muted">Kategori</h6>
+              <h3 class="card-title">Judul</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lacinia sodales risus, sit amet gravida libero fermentum eget.</p>
+              <a href="#" class="card-link">Selengkapnya...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card post-card" style="width: 100%;">
+        <div class="row">
+          <div class="col-3 post-image-holder">
+            <img src="./assets/placeholder.png" class="post-image" width="200px" height="200px" alt="Gambar" />
+          </div>
+          <div class="col">
+            <div class="card-body">
+              <div class="post-image-mobile-holder" style="max-height: 150px; overflow: hidden; margin-bottom:1rem;">
+                <img src="./assets/placeholder.png" class="post-image-mobile" width="500px" height="500px" alt="Gambar" />
+              </div>
+              <h6 class="card-subtitle mb-2 text-muted">Kategori</h6>
+              <h3 class="card-title">Judul</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lacinia sodales risus, sit amet gravida libero fermentum eget.</p>
+              <a href="#" class="card-link">Selengkapnya...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card post-card" style="width: 100%;">
+        <div class="row">
+          <div class="col-3 post-image-holder">
+            <img src="./assets/placeholder.png" class="post-image" width="200px" height="200px" alt="Gambar" />
+          </div>
+          <div class="col">
+            <div class="card-body">
+              <div class="post-image-mobile-holder" style="max-height: 150px; overflow: hidden; margin-bottom:1rem;">
+                <img src="./assets/placeholder.png" class="post-image-mobile" width="500px" height="500px" alt="Gambar" />
+              </div>
+              <h6 class="card-subtitle mb-2 text-muted">Kategori</h6>
+              <h3 class="card-title">Judul</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lacinia sodales risus, sit amet gravida libero fermentum eget.</p>
+              <a href="#" class="card-link">Selengkapnya...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn btn-outline-primary btn-md" role="button" aria-pressed="true">Older post</a>
+      <a href="#" class="btn btn-secondary btn-md disabled" role="button" aria-pressed="true">Newer post</a>
+    </div>
+    <div class="col" id="widget">
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title">Arsip</h3>
+          <p class="card-text">Lorem ipsum</p>
+          <p class="card-text">Lorem ipsum</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title">Kategori</h3>
+          <p class="card-text">Berita</p>
+          <p class="card-text">Pengumuman</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title">Sosial Media</h3>
+          <p class="card-text">
+            <i class="fab fa-instagram"></i> <a style="color:#2D3436" href="https://www.instagram.com/panahan_ub/">@panahan_ub</a>
+            <br>
+            <i class="fab fa-line"></i> <a style="color:#2D3436" href="https://line.me/R/ti/p/%40jzt1748d">@jzt1748d</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container px-5" style="background-color: #2D3436; max-width: 100%; height: 10rem;">
+  <div class="row">
+    <div class="col" style="margin-right:1rem;">
+      <div class="card" style="background-color: inherit; border-color:none;border: 0px;color: #DFE6E9;border-right: 2px;border-color: #DFE6E9">
+        <div class="card-body">
+          <h3 class="card-title">Arsip</h3>
+          <p class="card-text">Lorem ipsum</p>
+          <p class="card-text">Lorem ipsum</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="background-color: inherit; border-color:none;border:0px;color: #DFE6E9;">
+        <div class="card-body">
+          <h3 class="card-title">Arsip</h3>
+          <p class="card-text">Lorem ipsum</p>
+          <p class="card-text">Lorem ipsum</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card" style="background-color: inherit; border-color:none;border:0px;color: #DFE6E9;">
+        <div class="card-body">
+          <h3 class="card-title">Arsip</h3>
+          <p class="card-text">Lorem ipsum</p>
+          <p class="card-text">Lorem ipsum</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="footer mt-auto py-3">
+  <div class="container" style="text-align: center;">
+    <span style="color: #2D3436;">Copyright © 2019 Unit Aktivitas Panahan | Universitas Brawijaya</span>
+  </div>
+</footer>
+</body>
+</html>
