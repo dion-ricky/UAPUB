@@ -1,0 +1,160 @@
+html {
+  font-size: 14px;
+}
+@media only screen and (min-width: 768px){
+  html {
+    font-size: 16px;
+  }
+}
+
+/* posts image invisible below 940px */
+@media only screen and (min-width: 941px) {
+  .post-image-holder {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .post-image-holder {
+    display: none;
+  }
+}
+
+/* posts image mobile version below 720px */
+@media only screen and (min-width: 721px) {
+  .post-image-mobile-holder {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .post-image-mobile-holder {
+    display: block;
+  }
+}
+
+/* main blog post full width to screen below 992px */
+@media only screen and (max-width: 992px) {
+  .main {
+    max-width: 100%;
+  }
+}
+
+/* widget move from right hand side to bottom */
+@media only screen and (max-width: 822px) {
+  .widget-right {
+    display: none;
+  }
+  .widget-bottom {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 823px) {
+  .widget-right {
+    display: block;
+  }
+  .widget-bottom {
+    display: none;
+  }
+}
+
+/* change menu display below 491px */
+@media only screen and (max-width: 490px) {
+  .menu-desktop {
+    display: none;
+  }
+  .menu-mobile {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 491px) {
+  .menu-desktop {
+    display: block;
+  }
+  .menu-mobile {
+    display: none;
+  }
+}
+
+#collapseOne {
+  margin-top: 5px;
+}
+
+.btn-menu-mobile {
+  border-radius: 0;
+}
+
+.btn-menu-chev {
+  max-width: 50px;
+}
+
+.btn-group-menu {
+  border: 1px #343a40 solid;
+}
+
+.menu-mobile {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.jumbotron {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  overflow: hidden;
+  background-color: inherit;
+}
+
+.jumbo-block {
+  max-width: 60%;
+}
+
+.post {
+  margin-top: 1rem;
+}
+
+.post-image-holder {
+  padding-left: 0;
+  overflow: hidden;
+}
+
+.post-image-holder img{
+  border-radius: 10px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.post-link {
+  color: black;
+}
+
+.post-link:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.btn-post {
+  margin-top: 1rem;
+}
+
+.main {
+  margin-bottom: 2rem;
+}
+
+.footer {
+  background-color: #DFE6E9;
+}
+
+.widget .card {
+  margin-top: 1rem;
+}
+
+.card-link {
+  color: #2D3436;
+}
+
+.card-link:hover {
+  color: inherit;
+  text-decoration: underline;
+}
