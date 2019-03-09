@@ -2,11 +2,11 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
-  <link rel="stylesheet" href="./master.css">
+  <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/css/bootstrap.min.css">
+  <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/master.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="./js/bootstrap.bundle.min.js" charset="utf-8"></script>
+  <script src="<?php echo get_bloginfo('template_directory'); ?>/js/bootstrap.bundle.min.js" charset="utf-8"></script>
   <title>Unit Aktivitas Panahan | Universitas Brawijaya</title>
 </head>
 <body>
@@ -57,11 +57,11 @@
       <div class="container">
         <div class="row post">
           <div class="col-3 post-image-holder">
-            <img src="./assets/placeholder.png" class="post-image" width="200px" height="200px" alt="Gambar"/>
+            <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/placeholder.png" class="post-image" width="200px" height="200px" alt="Gambar"/>
           </div>
           <div class="col">
             <div class="post-image-mobile-holder" style="max-height: 150px; overflow: hidden; margin-bottom:1rem;">
-              <img src="./assets/placeholder.png" class="post-image-mobile" width="500px" height="500px" alt="Gambar" />
+              <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/placeholder.png" class="post-image-mobile" width="500px" height="500px" alt="Gambar" />
             </div>
             <h6><a href="#" class="post-link">Kategori</a></h6>
             <h3><a href="#" class="post-link">Judul</a></h3>
@@ -70,7 +70,7 @@
         </div>
         <div class="row post">
           <div class="col-3 post-image-holder">
-            <img src="./assets/placeholder.png" class="post-image" width="200px" height="200px" alt="Gambar"/>
+            <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/placeholder.png" class="post-image" width="200px" height="200px" alt="Gambar"/>
           </div>
           <div class="col">
             <h6><a href="#" class="post-link">Kategori</a></h6>
@@ -80,7 +80,7 @@
         </div>
         <div class="row post">
           <div class="col-3 post-image-holder">
-            <img src="./assets/placeholder.png" class="post-image" width="200px" height="200px" alt="Gambar"/>
+            <img src="<?php echo get_bloginfo('template_directory'); ?>/assets/placeholder.png" class="post-image" width="200px" height="200px" alt="Gambar"/>
           </div>
           <div class="col">
             <h6><a href="#" class="post-link">Kategori</a></h6>
