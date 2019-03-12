@@ -48,6 +48,13 @@ html {
   .widget-bottom {
     display: block;
   }
+  .widget-footer .col {
+    flex-basis: 100%;
+  }
+  .widget-footer {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
 }
 
 @media only screen and (min-width: 823px) {
@@ -56,6 +63,9 @@ html {
   }
   .widget-bottom {
     display: none;
+  }
+  .widget-footer .col {
+    flex-basis: 0;
   }
 }
 
