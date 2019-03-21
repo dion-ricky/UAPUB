@@ -43,15 +43,15 @@
           <p class="card-text">
             <i class="fab fa-instagram"></i> Instagram
             <br>
-            <a class="card-link px-3" href="https://www.instagram.com/panahan_ub/">@panahan_ub</a>
+            <a class="card-link px-3" href="https://www.instagram.com/panahan_ub/" target="_blank">@panahan_ub</a>
             <br>
-            <a class="card-link px-3" href="https://www.instagram.com/officialbac2019/">@officialbac2019</a>
+            <a class="card-link px-3" href="https://www.instagram.com/officialbac2019/" target="_blank">@officialbac2019</a>
             <br>
             <i class="fab fa-line"></i> Line
             <br>
-            <a class="card-link px-3" href="https://line.me/R/ti/p/%40jzt1748d">@jzt1748d</a>
+            <a class="card-link px-3" href="https://line.me/R/ti/p/%40jzt1748d" target="_blank">@jzt1748d</a>
             <br>
-            <a class="card-link px-3" href="https://line.me/R/ti/p/%40ofq9027c">@ofq9027c</a>
+            <a class="card-link px-3" href="https://line.me/R/ti/p/%40ofq9027c" target="_blank">@ofq9027c</a>
           </p>
         </div>
       </div>
@@ -65,17 +65,14 @@
 </footer>
 <script type="text/javascript">
 function dropdown_toggle(id){
-  console.log(id);
   $('#'+id).dropdown('toggle');
 }
 
 function dropdown_show(id){
-  console.log(id);
   $('#'+id).dropdown('show');
 }
 
 function dropdown_hide(id){
-  console.log(id);
   $('#'+id).dropdown('hide');
 }
 </script>

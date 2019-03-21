@@ -1,11 +1,12 @@
 <?php get_header(); ?>
 <div class="jumbotron">
   <div class="container">
+    <img class="jumbotron-image" src="<?php echo get_bloginfo('template_directory'); ?>/assets/brone_bac.png" alt="">
     <div class="row">
       <div class="col jumbo-block">
         <h1 class="display-4"><?php echo get_bloginfo('name'); ?></h1>
         <p><?php echo get_bloginfo('description'); ?></p>
-        <p><a class="btn btn-outline-primary btn-lg" href="#" role="button">Learn more »</a></p>
+        <p><a class="btn btn-outline-uap-green btn-lg" href="#" role="button">Learn more »</a></p>
       </div>
     </div>
   </div>
@@ -27,13 +28,13 @@
           preg_match_all('/href=[\'"]([\w\d\.\/\:]*)[\'"]/m', $nextLink, $matches, PREG_SET_ORDER, 0);
         ?>
 
-          <a class="btn btn-outline-primary btn-post" href="<?php echo ($matches[0][1]) ?>" role="button">Older post</a>
+          <a class="btn btn-outline-uap-green btn-post" href="<?php echo ($matches[0][1]) ?>" role="button">Older post</a>
 
         <?php
         } else {
         ?>
 
-          <a class="btn btn-outline-primary btn-post disabled" href="#" role="button">Older post</a>
+          <a class="btn btn-outline-uap-green btn-post disabled" href="#" role="button">Older post</a>
 
         <?php
         }
@@ -42,13 +43,13 @@
           preg_match_all('/href=[\'"]([\w\d\.\/\:]*)[\'"]/m', $previousLink, $matches, PREG_SET_ORDER, 0);
         ?>
 
-          <a class="btn btn-primary btn-post" href="<?php echo ($matches[0][1]); ?>" role="button">Newer post</a>
+          <a class="btn btn-uap-green btn-post" href="<?php echo ($matches[0][1]); ?>" role="button">Newer post</a>
 
         <?php
         } else {
         ?>
 
-          <a class="btn btn-primary btn-post disabled" href="#" role="button">Newer post</a>
+          <a class="btn btn-uap-green btn-post disabled" href="#" role="button">Newer post</a>
 
         <?php
         }

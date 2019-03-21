@@ -1,9 +1,12 @@
 html {
-  font-size: 14px;
+  font-size: 12px;
+}
+body {
+  font-family: 'kertayasaregular';
 }
 @media only screen and (min-width: 768px){
   html {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -12,6 +15,7 @@ html {
   .post-image-holder {
     display: block;
   }
+
 }
 
 @media only screen and (max-width: 940px) {
@@ -37,6 +41,12 @@ html {
 @media only screen and (max-width: 992px) {
   .main {
     max-width: 100%;
+  }
+  .jumbotron-image {
+    width: 50% !important;
+  }
+  .uap-logo-nav {
+    width: 10%;
   }
 }
 
@@ -77,6 +87,9 @@ html {
   .menu-mobile {
     display: block;
   }
+  .uap-logo-nav {
+    width: 15%;
+  }
 }
 
 @media only screen and (min-width: 491px) {
@@ -85,6 +98,36 @@ html {
   }
   .menu-mobile {
     display: none;
+  }
+}
+
+/* Jumbotron Image and Jumbo Block width on 1010px */
+@media only screen and (min-width: 1011px) {
+  .jumbotron-image {
+    display: none;
+
+  }
+  .jumbo-block {
+    max-width: 70%;
+  }
+}
+
+@media only screen and (max-width: 1010px) {
+  .jumbotron-image {
+    display: block;
+    width: 30%;
+  }
+  .jumbotron .container {
+    background-image: url('../assets/brone_bac.png');
+    background-image: none !important;
+    /* background-size: 320px;
+    background-repeat: no-repeat;
+    background-position: right; */
+    height: auto !important;
+    /* margin-left: 4rem; */
+  }
+  .jumbo-block {
+    max-width: 100%;
   }
 }
 
@@ -116,8 +159,22 @@ html {
   background-color: inherit;
 }
 
+.jumbotron .container {
+  background-image: url('../assets/brone_bac.png');
+  background-size: 320px;
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 350px;
+  /* margin-left: 4rem; */
+}
+
 .jumbo-block {
-  max-width: 60%;
+  /* max-width: 70%; */
+}
+
+.jumbotron-image {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .post {
@@ -242,7 +299,7 @@ html {
   color: #fff;
   padding: 0;
   border: 0;
-  height: 100%;
+  /* height: 100%; -> commented out error on mobile iPhone and Chrome */
   background-color: inherit;
 }
 
@@ -262,4 +319,35 @@ html {
   border: 0;
   padding: 0;
   padding-top: 0.5rem;
+}
+
+.btn-outline-uap-green:hover {
+  color: #fff;
+  background-color: #0E694E;
+  border-color: #0E694E;
+}
+
+.btn-outline-uap-green {
+  color: #0E694E;
+  border-color: #0E694E;
+}
+
+.btn-outline-uap-green:focus {
+  box-shadow: 0 0 0 .2rem rgba(14,105,78,0.25);
+}
+
+.btn-uap-green:hover {
+  color: #fff;
+  background-color: #094936;
+  border-color: #094936;
+}
+
+.btn-uap-green {
+  color: #fff;
+  background-color: #0E694E;
+  border-color: #0E694E;
+}
+
+.btn-uap-green:focus {
+  box-shadow: 0 0 0 .2rem rgba(14,105,78,0.25);
 }
