@@ -6,7 +6,7 @@
       <div class="col jumbo-block">
         <h1 class="display-4"><?php echo get_bloginfo('name'); ?></h1>
         <p><?php echo get_bloginfo('description'); ?></p>
-        <p><a class="btn btn-outline-uap-green btn-lg" href="#" role="button">Learn more »</a></p>
+        <p><a class="btn btn-outline-uap btn-lg" href="#" role="button">Learn more »</a></p>
       </div>
     </div>
   </div>
@@ -28,13 +28,13 @@
           preg_match_all('/href=[\'"]([\w\d\.\/\:]*)[\'"]/m', $nextLink, $matches, PREG_SET_ORDER, 0);
         ?>
 
-          <a class="btn btn-outline-uap-green btn-post" href="<?php echo ($matches[0][1]) ?>" role="button">Older post</a>
+          <a class="btn btn-outline-uap btn-post" href="<?php echo ($matches[0][1]) ?>" role="button">Older post</a>
 
         <?php
         } else {
         ?>
 
-          <a class="btn btn-outline-uap-green btn-post disabled" href="#" role="button">Older post</a>
+          <a class="btn btn-outline-uap btn-post disabled" href="#" role="button">Older post</a>
 
         <?php
         }
@@ -43,13 +43,13 @@
           preg_match_all('/href=[\'"]([\w\d\.\/\:]*)[\'"]/m', $previousLink, $matches, PREG_SET_ORDER, 0);
         ?>
 
-          <a class="btn btn-uap-green btn-post" href="<?php echo ($matches[0][1]); ?>" role="button">Newer post</a>
+          <a class="btn btn-uap btn-post" href="<?php echo ($matches[0][1]); ?>" role="button">Newer post</a>
 
         <?php
         } else {
         ?>
 
-          <a class="btn btn-uap-green btn-post disabled" href="#" role="button">Newer post</a>
+          <a class="btn btn-uap btn-post disabled" href="#" role="button">Newer post</a>
 
         <?php
         }

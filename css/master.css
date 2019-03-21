@@ -267,6 +267,7 @@ body {
   border: 1px solid #ced4da;
   padding: .375rem .75rem;
   font-size: 1rem;
+  font-family: inherit;
 }
 
 .comment-form-comment {
@@ -321,33 +322,47 @@ body {
   padding-top: 0.5rem;
 }
 
-.btn-outline-uap-green:hover {
-  color: #fff;
-  background-color: #0E694E;
-  border-color: #0E694E;
+.btn-outline-uap {
+  color: #000;
+  border-color: #FDD929;
+  border-width: .15rem;
 }
 
-.btn-outline-uap-green {
-  color: #0E694E;
-  border-color: #0E694E;
+.btn-outline-uap:hover {
+  color: #000;
+  background-color: #FDD929;
+  border-color: #FDD929;
 }
 
-.btn-outline-uap-green:focus {
-  box-shadow: 0 0 0 .2rem rgba(14,105,78,0.25);
+.btn-outline-uap:focus {
+  box-shadow: 0 0 0 .2rem rgba(253,217,41,0.25);
 }
 
-.btn-uap-green:hover {
-  color: #fff;
-  background-color: #094936;
-  border-color: #094936;
+.btn-uap {
+  color: #000;
+  background-color: #FDD929;
+  border-color: #FDD929;
 }
 
-.btn-uap-green {
-  color: #fff;
-  background-color: #0E694E;
-  border-color: #0E694E;
+.btn-uap:hover {
+  color: #000;
+  background-color: #e3c324;
+  border-color: #e3c324;
 }
 
-.btn-uap-green:focus {
-  box-shadow: 0 0 0 .2rem rgba(14,105,78,0.25);
+.btn-uap:focus {
+  box-shadow: 0 0 0 .2rem rgba(253,217,41,0.25);
+}
+
+.comment-form input {
+  display: block;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  font-size: 1rem;
+  padding: .375rem .75rem;
+}
+
+.comment-form-cookies-consent input {
+  display: inline-block;
+  margin-right: .5rem;
 }

@@ -66,7 +66,7 @@
     </nav>
     <div class="accordion menu-mobile" id="accordionMenu">
       <div class="card">
-        <button class="btn btn-outline-uap-green" id="headingOne" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <button class="btn btn-outline-uap" id="headingOne" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
           Menu &nbsp;<i class="fas fa-bars"></i>
         </button>
       </div>
@@ -82,7 +82,7 @@
             }
             if($nav_item->menu_item_parent == "0"){
           ?>
-          <a class="btn btn-uap-green mobile-menu-button" <?php echo ($countChild!=0) ? "data-toggle='collapse'" : "" ?> href="<?php echo ($countChild==0) ? $nav_item->url : "#collapse".$id; ?>" role="button" <?php echo ($countChild!=0) ? "aria-expanded='false'" : ""; echo ($countChild!=0) ? "aria-controls='collapse".$id."'" : "" ?> >
+          <a class="btn btn-uap mobile-menu-button" <?php echo ($countChild!=0) ? "data-toggle='collapse'" : "" ?> href="<?php echo ($countChild==0) ? $nav_item->url : "#collapse".$id; ?>" role="button" <?php echo ($countChild!=0) ? "aria-expanded='false'" : ""; echo ($countChild!=0) ? "aria-controls='collapse".$id."'" : "" ?> >
           <?php echo $nav_item->title; ?>
           </a>
           <?php
@@ -94,7 +94,7 @@
                 foreach($nav_items as $nav_itemTemp){
                   if($nav_itemTemp->menu_item_parent == (string)$nav_item->ID){
           ?>
-          <a class="btn btn-outline-uap-green mobile-menu-button" href="<?php echo $nav_itemTemp->url ?>" role="button">
+          <a class="btn btn-outline-uap mobile-menu-button" href="<?php echo $nav_itemTemp->url ?>" role="button">
           <?php echo $nav_itemTemp->title ?>
           </a>
           <?php
