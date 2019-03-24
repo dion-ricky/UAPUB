@@ -23,5 +23,5 @@
 				<?php _e( 'Comments are closed.' ); ?>
 			</p>
 		<?php endif; ?>
-		<?php comment_form(array('class_submit' => 'btn btn-info')); ?>
+		<?php comment_form(array('class_submit' => 'btn btn-uap')); ?>
 	</div>

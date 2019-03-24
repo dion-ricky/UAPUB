@@ -18,6 +18,9 @@
     <img class="mr-3 uap-logo-nav" src="<?php echo get_bloginfo('template_directory'); ?>/assets/uap_logo@0.5x.png" width="5%" height="5%" alt="UAP LOGO">
     <h5 class="my-0 mr-md-auto font-weight-normal"><a class="text-dark link-style-none" href="<?php echo get_bloginfo('wpurl'); ?>"><?php echo get_bloginfo('name'); ?></a></h5>
     <nav class="my-2 my-md-0 mr-md-3 menu-desktop">
+
+    <!-- Desktop Menu -->
+
     <div class="row nav-menu">
       <?php
       $nav_menu = wp_get_nav_menus();
@@ -64,6 +67,9 @@
       ?>
     </div>
     </nav>
+
+    <!-- Mobile menu -->
+
     <div class="accordion menu-mobile" id="accordionMenu">
       <div class="card">
         <button class="btn btn-outline-uap" id="headingOne" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -109,4 +115,57 @@
           ?>
       </div>
     </div>
+  </div>
+
+  <!-- nav scroller (navigation below top nav) -->
+  <!-- visible from 625px to 1197px -->
+
+  <div class="nav-scroller bg-white shadow-sm">
+    <nav class="nav nav-underline">
+      <div class="row nav-menu">
+        <?php
+        $nav_menu = wp_get_nav_menus();
+        $nav_items = wp_get_nav_menu_items($nav_menu[0]);
+        $id = 0;
+        foreach($nav_items as $nav_item){
+          $countChild = 0;
+          foreach($nav_items as $nav_itemTemp){
+            if($nav_itemTemp->menu_item_parent == (string)$nav_item->ID){
+              $countChild++;
+            }
+          }
+          if($nav_item->menu_item_parent == "0"){
+        ?>
+        <div class="col">
+        <div class="dropdown">
+        <?php
+            if($countChild!=0){
+        ?>
+        <button class="btn <?php echo ($countChild!=0) ? "dropdown-toggle" : "dropdown-nav" ?>" type="button" id="<?php echo "dropdown".$id ?>" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <?php echo $nav_item->title; ?>
+        </button>
+
+        <div class="dropdown-menu" id="<?php echo "dropdown".$id ?>" aria-labelledby="<?php echo "dropdown".$id ?>">
+        <?php
+              foreach($nav_items as $nav_itemTemp){
+                if($nav_itemTemp->menu_item_parent == (string)$nav_item->ID){
+        ?>
+        <a class="dropdown-item" href="<?php echo $nav_itemTemp->url ?>"><?php echo $nav_itemTemp->title ?></a>
+        <?php
+                }
+              }
+              echo "</div>";
+            } else {
+        ?>
+        <a class="btn dropdown-nav" href="<?php echo $nav_item->url ?>" role="button"><?php echo $nav_item->title ?></a>
+        <?php
+            }
+            $id++;
+            echo "</div>";
+            echo "</div>";
+          }
+        }
+        ?>
+      </div>
+    </nav>
   </div>
