@@ -4,9 +4,9 @@
     <img class="jumbotron-image" src="<?php echo get_bloginfo('template_directory'); ?>/assets/brone_bac.png" alt="">
     <div class="row">
       <div class="col jumbo-block">
-        <h1 class="display-4"><?php echo get_bloginfo('name'); ?></h1>
-        <p><?php echo get_bloginfo('description'); ?></p>
-        <p><a class="btn btn-outline-uap btn-lg" href="#" role="button">Learn more »</a></p>
+        <h1 class="display-4">Brawijaya Archery Championship II 2019</h1>
+        <p>Prepare your team now!!!!<br>Brawijaya Archery Championship II 2019 adalah kompetisi panahan kedua kalinya yang telah berhasil dilaksanakan di Universitas Brawijaya serta menyuguhkan total hadiah puluhan juta rupiah dan medali untuk tim tim hebat.<br><br>Catat dan lingkari tanggal penting pendaftarannya. Jangan sampai terlewatkan.<br>Persiapkan tim kalian dan jadilah juara pertama kali di BAC 2019 ini.<br><br>For further information please follow and stay tune on our official account:<br><i class="fab fa-line"></i> Line: <a href="https://line.me/R/ti/p/%40ofq9027c">@ofq9027c</a><br><i class="fab fa-instagram"></i> IG: <a href="https://www.instagram.com/officialbac2019/">@officialbac2019</a></p>
+        <p><a class="btn btn-outline-uap btn-lg" href="./category/brawijaya-archery-championship" role="button">Learn more »</a></p>
       </div>
     </div>
   </div>
