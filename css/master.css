@@ -2,7 +2,7 @@ html {
   font-size: 12px;
 }
 body {
-  font-family: 'kertayasaregular';
+  font-family: 'kertayasaregular', "Times New Roman", serif;
 }
 /* Reduce font size */
 @media only screen and (min-width: 768px){
